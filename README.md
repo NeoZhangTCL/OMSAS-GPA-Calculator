@@ -14,6 +14,7 @@ A website make people just to upload their transcript pdf version to calculate t
       2. Upload the transcript file</br>
       3. Get the result</br>
       4. Clear the cache for confidentiality </br>
+      </br>
 **Logical Processing**</br>
       1.  Using the PDF.js to extract the transcripts pdf file</br>
 Note the different school may have different layout of pdf, we should try to get all schools layout to make sure get the right transcript info</br>
