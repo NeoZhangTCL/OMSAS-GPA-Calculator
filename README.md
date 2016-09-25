@@ -1,4 +1,4 @@
-#MSAS GPA Calculator</br>
+#OMSAS GPA Calculator</br>
 09.25.2016</br>
 </br>
 Neo Zhang</br>
