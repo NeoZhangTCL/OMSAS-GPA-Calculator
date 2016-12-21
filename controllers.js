@@ -13,6 +13,7 @@ function TranscriptReaderCtrl($http, $scope, $window, $sce) {
 		console.log(fileUrl);
 		$scope.fileUrl = $sce.trustAsResourceUrl(fileUrl);
 		console.log($scope.fileUrl);
+		$scope.$apply();
 	}
 
 }
