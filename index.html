@@ -1,14 +1,25 @@
-<html>
+<html ng-app="PDFReaderApp">
   <head>
     <title> Automatically get your GPA from submitting in your transcript pdf file </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
     <script src="./pdf.js" ></script>
     <script src="./app.js" ></script>
-  </head>
-  <body>
+    <script src="./controllers.js"></script>
 
-    <input id="inputPDF" type="file" accept="application/pdf" />
+    <style>
+    iframe {
+      height: 500px;
+      width: 400px;
+      margin: 2em;
+    }
+    </style>
+  </head>
+  <body ng-controller="TranscriptReaderCtrl">
+
+    <input id="inputPDF" type="file" accept="application/pdf" onchange="angular.element(this).scope().getPDF(this.files)" />
     <div id="display">
-      
+    <iframe id="viewer" ng-src="{{fileUrl}}" ></iframe>
     </div>
   </body>
 </html>
